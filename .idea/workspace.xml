@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ec57550-7681-4059-b6b1-07e22681916f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watchlist.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,9 +81,9 @@
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="977" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1152@0.0.2048.1152" timestamp="1584347409986" />
-    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584373303395">
+    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584411005469">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
-    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1152@0.0.2048.1152" timestamp="1584373303395" />
+    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1152@0.0.2048.1152" timestamp="1584411005469" />
   </component>
 </project>

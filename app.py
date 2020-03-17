@@ -1,6 +1,5 @@
 import os, sys
 
-
 from flask import Flask, escape, url_for, render_template
 from flask_sqlalchemy import SQLAlchemy
 
@@ -9,7 +8,6 @@ if WIN:  # 如果是 Windows 系统，使用三个斜线
     prefix = 'sqlite:///'
 else:  # 否则使用四个斜线
     prefix = 'sqlite:////'
-
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////' + os.path.join(app.root_path, 'data.db')
@@ -31,6 +29,7 @@ class Movie(db.Model):  # 表名将会是 movie
 
 import click
 
+
 @app.cli.command()  # 注册为命令
 @click.option('--drop', is_flag=True, help='Create after drop.')  # 设置选项
 def initdb(drop):
@@ -39,6 +38,7 @@ def initdb(drop):
         db.drop_all()
     db.create_all()
     click.echo('Initialized database.')  # 输出提示信息
+
 
 @app.cli.command()
 def forge():
@@ -69,16 +69,17 @@ def forge():
     db.session.commit()
     click.echo('Done.')
 
+
 @app.route('/')
 def index():
-    user = User.query.first()  # 读取用户记录
+    # user = User.query.first()  # 读取用户记录
     movies = Movie.query.all()  # 读取所有电影记录
-    return render_template('index.html', user=user, movies=movies)
+    return render_template('index.html', movies=movies)
 
 
-@app.route('/user/<name>')
-def user_page(name):
-    return 'user : {}'.format(escape(name))
+@app.route('/totoro')
+def user_page():
+    return '<h1>Hello Totoro!</h1><img src="http://helloflask.com/totoro.gif">'
 
 
 @app.route('/user_id/<int:id>')
@@ -97,3 +98,14 @@ def test_url_for():
     # 下面这个调用传入了多余的关键字参数，它们会被作为查询字符串附加到 URL 后面。
     print(url_for('test_url_for', num=2))  # 输出：/test?num=2
     return 'Test page'
+
+
+@app.context_processor
+def inject_user():
+    user = User.query.first()
+    return dict(user=user)
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
