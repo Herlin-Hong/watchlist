@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ec57550-7681-4059-b6b1-07e22681916f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_watchlist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/watchlist/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/watchlist/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/watchlist/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/watchlist/templates/settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.flaskenv" beforeDir="false" afterPath="$PROJECT_DIR$/.flaskenv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watchlist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watchlist.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/totoro.gif" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/images/totoro.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/errors/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/watchlist/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -45,11 +57,38 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/watchlist/templates/errors" />
+      <recent name="$PROJECT_DIR$/watchlist" />
       <recent name="$PROJECT_DIR$/static/images" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unittests in test_watchlist.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="watchlist" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_watchlist.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test_watchlist.py" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -76,14 +115,49 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="977" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584347409986">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
     <state x="977" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2048.1152@0.0.2048.1152" timestamp="1584347409986" />
-    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584411005469">
+    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584453581432">
       <screen x="0" y="0" width="2048" height="1152" />
     </state>
-    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1152@0.0.2048.1152" timestamp="1584411005469" />
+    <state x="1277" y="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2048.1152@0.0.2048.1152" timestamp="1584453581432" />
+    <state x="1277" y="330" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584455518635">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state x="1277" y="330" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2048.1152@0.0.2048.1152" timestamp="1584455518635" />
+    <state width="997" height="430" key="GridCell.Tab.0.bottom" timestamp="1584440211858">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state width="997" height="430" key="GridCell.Tab.0.bottom/0.0.2048.1152@0.0.2048.1152" timestamp="1584440211858" />
+    <state width="997" height="430" key="GridCell.Tab.0.center" timestamp="1584440211857">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state width="997" height="430" key="GridCell.Tab.0.center/0.0.2048.1152@0.0.2048.1152" timestamp="1584440211857" />
+    <state width="997" height="430" key="GridCell.Tab.0.left" timestamp="1584440211856">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state width="997" height="430" key="GridCell.Tab.0.left/0.0.2048.1152@0.0.2048.1152" timestamp="1584440211856" />
+    <state width="997" height="430" key="GridCell.Tab.0.right" timestamp="1584440211857">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state width="997" height="430" key="GridCell.Tab.0.right/0.0.2048.1152@0.0.2048.1152" timestamp="1584440211857" />
+    <state x="1040" y="215" key="SettingsEditor" timestamp="1584437406530">
+      <screen x="0" y="0" width="2048" height="1152" />
+    </state>
+    <state x="1040" y="215" key="SettingsEditor/0.0.2048.1152@0.0.2048.1152" timestamp="1584437406530" />
   </component>
 </project>
